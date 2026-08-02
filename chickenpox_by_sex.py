@@ -22,6 +22,4 @@ def chickenpox_by_sex():
             "female":ratio_female}
 
 if __name__ == '__main__':
-    chickenpox_by_sex()
-    print("Executed.")
-    #assert len(chickenpox_by_sex())==2, "Return a dictionary with two items, the first for males and the second for females."
+   assert len(chickenpox_by_sex())==2, "Return a dictionary with two items, the first for males and the second for females."

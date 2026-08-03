@@ -10,7 +10,7 @@ def logs():
     # Match a hyphen, then a space, grab everything until match a space, then an opening square bracket.
     user_names = re.findall(r'-\s(.*?)\s\[', logdata)
 
-    # Match an opening square bracket, grb everything until match a closing square bracket.
+    # Match an opening square bracket, grab everything until match a closing square bracket.
     times = re.findall(r'\[(.*?)]', logdata)
 
     # Grab everything in between quotation marks.

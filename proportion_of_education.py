@@ -1,9 +1,8 @@
 def proportion_of_education():
     import pandas as pd
-    # df = pd.read_csv("NISPUF17.csv")
-    # on Coursera the file is in assets/
     df = pd.read_csv("assets/NISPUF17.csv")
-    value_counts = df['EDUC1'].value_counts(normalize=True) # normalize gives proportions.
+    # Normalize gives proportions.
+    value_counts = df['EDUC1'].value_counts(normalize=True)
 
     return {"less than high school":value_counts[1],
             "high school":value_counts[2],
@@ -12,4 +11,3 @@ def proportion_of_education():
     
 if __name__ == '__main__':
     print(proportion_of_education())
-    print("Executed.")
